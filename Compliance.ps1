@@ -32,7 +32,7 @@ IfThenStatement ($registrypath, $name, $value)
 ## 1.24 1358 Retention Method for Application Log
 $registrypath = "HKLM:/System/CurrentControlSet/Services/Eventlog/Application"
 $name = "DefaultInboundAction"
-$value = 0
+$value = 1
 Write-Host $registrypath
 IfThenStatement ($registrypath, $name, $value)
 
